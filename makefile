@@ -1,4 +1,4 @@
-dotenv = "./config/.env"
+dotenv = "./.env"
 compose_file = "./config/docker-compose.yml"
 
 up:

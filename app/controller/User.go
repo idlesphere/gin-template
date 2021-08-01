@@ -1,7 +1,7 @@
 package controller
 
 import (
-	"gin-template/app/model/forms"
+	"gin-template/app/dto"
 	"gin-template/app/pkg/auth"
 
 	"github.com/gin-gonic/gin"
@@ -16,7 +16,7 @@ func (ctl *UserController) Run(ctx *gin.Context) {
 }
 
 func (ctl *UserController) Login(ctx *gin.Context) {
-	var data forms.User
+	var data dto.Login
 
 	// ShouldBind request body data to var data and check if all details are provided
 	if ctx.ShouldBind(&data) != nil {

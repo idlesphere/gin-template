@@ -1,6 +1,6 @@
-package forms
+package dto
 
 
-type User struct {
+type Login struct {
 	Username    string `json:"username" binding:"required"`
 }

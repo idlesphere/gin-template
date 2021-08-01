@@ -8,7 +8,7 @@ import (
 
 // default get from env, then .env
 func Get(key string) string {
-	_ = godotenv.Load("config/.env")
+	_ = godotenv.Load()
 
 	return os.Getenv(key)
 }
