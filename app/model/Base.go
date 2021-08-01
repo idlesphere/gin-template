@@ -1,13 +1,12 @@
-package dao
+package model
 
 import (
 	"gopkg.in/mgo.v2/bson"
 	"time"
 )
 
-type BaseDao struct {
+type BaseModel struct {
 	Id        bson.ObjectId `json:"id,omitempty" bson:"_id,omitempty"`
-	Name      string        `json:"name" bson:"name"`
 	CreatedAt time.Time     `json:"created_at" bson:"created_at"`
 	UpdatedAt time.Time     `json:"updated_at" bson:"updated_at"`
 	CreatedBy string        `json:"created_by" bson:"created_by"`
