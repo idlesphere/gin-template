@@ -1,10 +1,11 @@
 package router
 
 import (
-"gin-template/app/controller"
+	"gin-template/app/controller"
 
-"github.com/gin-gonic/gin"
-"gin-template/app/middleware"
+	"gin-template/app/middleware"
+
+	"github.com/gin-gonic/gin"
 )
 
 func SetRouter(app *gin.Engine) {
@@ -24,4 +25,3 @@ func SetRouter(app *gin.Engine) {
 	}
 
 }
-
