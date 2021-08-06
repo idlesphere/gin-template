@@ -29,7 +29,7 @@ func New(collection string) *Repository {
 	r.conn = mongo.ConnectionURL{
 		Host:     env.Get("MONGO_HOST"),
 		Database: env.Get("MONGO_DB"),
-		User:     env.Get("MONGO_USER"),
+		User:     env.Get("MONGO_USERNAME"),
 		Password: env.Get("MONGO_PASSWORD"),
 		Options: map[string]string{
 			"authSource": "admin",
